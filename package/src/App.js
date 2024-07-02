@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
-import { IonRouterOutlet, IonApp } from "@ionic/react";
+import { IonRouterOutlet, IonApp, IonNav } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { PageOne } from "./pages";
+import { PageOne, Home } from "./pages";
 
 export default ({ history }) => {
   return (
