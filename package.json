@@ -1,11 +1,19 @@
 {
-  "name": "mfe-starter",
-  "version": "1.1.2",
+  "name": "miniapp-starter",
+  "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/TeamXFintech/mfe-starter.git",
+  "repository": "https://github.com/klauth-project/miniapp-starter.git",
   "author": "kayrules <kayrules@gmail.com>",
   "license": "MIT",
   "bin": {
     "mfe-starter": "./cli.sh"
+  },
+  "dependencies": {
+    "@ionic/react": "^8.2.4",
+    "@ionic/react-router": "^8.2.4",
+    "ionicons": "^7.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.0"
   }
 }
