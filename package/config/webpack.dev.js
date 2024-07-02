@@ -23,6 +23,7 @@ const devConfig = {
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/bootstrap",
+        "./pages": "./src/pages",
         "./components": "./src/components",
       },
       shared: {

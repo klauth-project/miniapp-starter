@@ -1,4 +1,3 @@
-import Home from "./Home";
-import SecondScreen from "./SecondScreen";
+import DatePicker from "./DatePicker";
 
-export { Home, SecondScreen };
+export { DatePicker };
