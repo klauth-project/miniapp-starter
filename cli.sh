@@ -7,6 +7,12 @@ else
   _project=$1
   _module=$2
   _port=$3
+  _pwd=$PWD
+fi
+
+if [ -d "$_module" ]; then
+  echo "ERROR! - Module '${_module}' already exists"
+  exit 0
 fi
 
 rm -rf .temp
@@ -24,9 +30,8 @@ grep -rl __PORT__ . | xargs sed -i "" -e 's/__PORT__/'$_port'/g'
 # yarn add react react-dom react-router-dom react-router ionicons @ionic/react @ionic/react-router
 # yarn add -D @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin prop-types style-loader webpack webpack-cli webpack-dev-server webpack-merge
 
-# mv package ../../$_module
-# cd ../../
+mv ./package/ $_pwd/$_module
 
-# rm -rf .temp
+rm -rf .temp
 
 echo 'DONE.'
