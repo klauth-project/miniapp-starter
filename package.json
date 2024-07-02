@@ -1,0 +1,11 @@
+{
+  "name": "mfe-starter",
+  "version": "1.1.2",
+  "main": "index.js",
+  "repository": "https://github.com/TeamXFintech/mfe-starter.git",
+  "author": "kayrules <kayrules@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "mfe-starter": "./cli.sh"
+  }
+}
