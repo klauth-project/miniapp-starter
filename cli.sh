@@ -26,11 +26,11 @@ grep -rl __PROJECT__ . | xargs sed -i "" -e 's/__PROJECT__/'$_project'/g'
 grep -rl __MODULE__ . | xargs sed -i "" -e 's/__MODULE__/'$_module'/g'
 grep -rl __PORT__ . | xargs sed -i "" -e 's/__PORT__/'$_port'/g'
 
-# yarn install
-# yarn add react react-dom react-router-dom react-router ionicons @ionic/react @ionic/react-router
-# yarn add -D @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin prop-types style-loader webpack webpack-cli webpack-dev-server webpack-merge
+yarn install
+yarn add react react-dom react-router-dom react-router ionicons @ionic/react @ionic/react-router
+yarn add -D @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin prop-types style-loader webpack webpack-cli webpack-dev-server webpack-merge
 
-mv ./package/ $_pwd/$_module
+mv ./package ./$_pwd/$_module
 
 rm -rf .temp
 
