@@ -1,3 +1,6 @@
+const webpack = require("webpack");
+const path = require("path");
+
 module.exports = {
   module: {
     rules: [
@@ -25,7 +28,6 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         BASE_URL: JSON.stringify(process.env.BASE_URL),
       },
     }),

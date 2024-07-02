@@ -31,10 +31,7 @@ grep -rl __PORT__ . | xargs sed -i "" -e 's/__PORT__/'$_port'/g'
 
 echo '--- Installing dependencies ---'
 cd package
-yarn add react react-dom react-router-dom react-router ionicons @ionic/react @ionic/react-router history
-
-echo '--- Installing dev dependencies ---'
-yarn add -D @babel/core @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin prop-types style-loader webpack webpack-cli webpack-dev-server webpack-merge
+yarn install
 
 echo '--- Finalizing ---'
 cd ..
