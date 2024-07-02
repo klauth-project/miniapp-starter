@@ -12,7 +12,7 @@ import {
 
 import PageThree from "./page-three";
 
-function PageTwo() {
+const PageTwo = ({ history }) => {
   return (
     <>
       <IonHeader>
@@ -25,12 +25,15 @@ function PageTwo() {
       </IonHeader>
       <IonContent class="ion-padding">
         <h1>Page Two</h1>
-        <IonNavLink routerDirection="forward" component={() => <PageThree />}>
+        <IonNavLink
+          routerDirection="forward"
+          component={() => <PageThree history={history} />}
+        >
           <IonButton>Go to Page Three</IonButton>
         </IonNavLink>
       </IonContent>
     </>
   );
-}
+};
 
 export default PageTwo;

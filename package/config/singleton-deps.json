@@ -1,22 +1,26 @@
 {
   "react": {
     "singleton": true,
-    "requiredVersion": "${deps.react}"
+    "requiredVersion": "^18.3.1"
   },
   "react-dom": {
     "singleton": true,
-    "requiredVersion": "${deps['react-dom']}"
-  },
-  "ionicons": {
-    "singleton": true,
-    "requiredVersion": "${deps.ionicons}"
+    "requiredVersion": "^18.3.1"
   },
   "@ionic/react": {
     "singleton": true,
-    "requiredVersion": "${deps['@ionic/react']}"
+    "requiredVersion": "^8.2.4"
   },
   "@ionic/react-router": {
     "singleton": true,
-    "requiredVersion": "${deps['@ionic/react-router']}"
+    "requiredVersion": "^8.2.4"
+  },
+  "react-router": {
+    "singleton": true,
+    "requiredVersion": "^5.2.0"
+  },
+  "react-router-dom": {
+    "singleton": true,
+    "requiredVersion": "^5.2.0"
   }
 }

@@ -11,7 +11,13 @@ export default ({ history }) => {
         <Suspense fallback={<div>Loading...</div>}>
           <IonRouterOutlet>
             <Switch>
-              <Route exact path="/__MODULE__/" component={PageOne} />
+              <Route
+                path="/__MODULE__/"
+                render={() => (
+                  <IonNav root={() => <PageOne history={history} />}></IonNav>
+                )}
+              />
+              <Route exact path="/" component={Home} />
             </Switch>
           </IonRouterOutlet>
         </Suspense>

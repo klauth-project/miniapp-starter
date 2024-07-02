@@ -10,8 +10,8 @@ import {
 } from "@ionic/react";
 
 const Home = ({ history }) => {
-  const navigateToSecondScreen = () => {
-    history.push("/ggproject5/second");
+  const letsStart = () => {
+    history.push("/__MODULE__/page-one");
   };
 
   return (
@@ -23,10 +23,10 @@ const Home = ({ history }) => {
       </IonHeader>
       <IonContent className="ion-padding">
         <IonText color="primary">
-          <h1>Welcome to first screen</h1>
+          <h1>Welcome to Mini-App</h1>
         </IonText>
-        <IonButton expand="full" onClick={() => navigateToSecondScreen()}>
-          Go to second screen
+        <IonButton expand="full" onClick={() => letsStart()}>
+          Let's view all pages
         </IonButton>
       </IonContent>
     </IonPage>

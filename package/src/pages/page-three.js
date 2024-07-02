@@ -6,9 +6,11 @@ import {
   IonContent,
   IonToolbar,
   IonTitle,
+  IonButton,
+  IonNavLink,
 } from "@ionic/react";
 
-function PageThree() {
+const PageThree = ({ history }) => {
   return (
     <>
       <IonHeader>
@@ -21,9 +23,12 @@ function PageThree() {
       </IonHeader>
       <IonContent class="ion-padding">
         <h1>Page Three</h1>
+        <IonNavLink onClick={() => history.push("/")}>
+          <IonButton color={"secondary"}>Start Over</IonButton>
+        </IonNavLink>
       </IonContent>
     </>
   );
-}
+};
 
 export default PageThree;
