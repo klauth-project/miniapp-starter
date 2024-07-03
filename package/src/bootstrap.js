@@ -26,6 +26,8 @@ import "@ionic/react/css/display.css";
 import { setupIonicReact } from "@ionic/react";
 setupIonicReact();
 
+let root = null;
+
 // Mount function to start up the app
 const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
   const history =
@@ -38,8 +40,10 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
     history.listen(onNavigate);
   }
 
-  const root = ReactDOM.createRoot(el);
-  root.render(<App history={history} />);
+  if (!root) {
+    root = createRoot(el);
+    root.render(<App history={history} />);
+  }
 
   return {
     onParentNavigate({ pathname: nextPathname }) {
