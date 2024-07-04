@@ -11,7 +11,7 @@ import {
 
 const Home = ({ history }) => {
   const letsStart = () => {
-    history.push("/__MODULE__/page-one");
+    history.push("/__MODULE__/pages/page-one");
   };
 
   return (

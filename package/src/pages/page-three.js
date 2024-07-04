@@ -23,7 +23,7 @@ const PageThree = ({ history }) => {
       </IonHeader>
       <IonContent class="ion-padding">
         <h1>Page Three</h1>
-        <IonNavLink onClick={() => history.push("/")}>
+        <IonNavLink onClick={() => history.push("/__MODULE__")}>
           <IonButton color={"secondary"}>Start Over</IonButton>
         </IonNavLink>
       </IonContent>

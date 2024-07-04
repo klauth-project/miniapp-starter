@@ -12,7 +12,7 @@ export default ({ history }) => {
           <IonRouterOutlet>
             <Switch>
               <Route
-                path="/__MODULE__/"
+                path="/__MODULE__/pages"
                 render={() => (
                   <IonNav root={() => <PageOne history={history} />}></IonNav>
                 )}
