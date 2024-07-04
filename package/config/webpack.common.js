@@ -39,7 +39,4 @@ module.exports = {
       _components: path.resolve("src/components/"),
     },
   },
-  optimization: {
-    runtimeChunk: "single",
-  },
 };
