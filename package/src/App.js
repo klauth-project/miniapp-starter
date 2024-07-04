@@ -17,7 +17,7 @@ export default ({ history }) => {
                   <IonNav root={() => <PageOne history={history} />}></IonNav>
                 )}
               />
-              <Route exact path="/__MODULE__/" component={Home} />
+              <Route exact path="/__MODULE__" component={Home} />
             </Switch>
           </IonRouterOutlet>
         </Suspense>
