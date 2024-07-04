@@ -9,6 +9,7 @@ import {
   IonButton,
   IonNavLink,
 } from "@ionic/react";
+import DatePicker from "../components/DatePicker";
 
 const PageThree = ({ history }) => {
   return (
@@ -23,8 +24,13 @@ const PageThree = ({ history }) => {
       </IonHeader>
       <IonContent class="ion-padding">
         <h1>Page Three</h1>
+
+        <DatePicker />
+
         <IonNavLink onClick={() => history.push("/__MODULE__")}>
-          <IonButton color={"secondary"}>Start Over</IonButton>
+          <IonButton expand="full" color={"secondary"}>
+            Start Over
+          </IonButton>
         </IonNavLink>
       </IonContent>
     </>

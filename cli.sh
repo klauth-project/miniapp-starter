@@ -39,3 +39,4 @@ mv package $_pwd/$_module
 rm -rf .temp
 
 echo 'DONE.'
+echo '* You can test your module at: http://localhost:'$_port'/'$_module
